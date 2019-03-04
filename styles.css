@@ -57,3 +57,9 @@ img
     margin-left: auto;
     margin-right: auto;
 }
+
+.half-rule { 
+    margin-left: 0;
+    text-align: left;
+    width: 50%;
+ }
