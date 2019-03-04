@@ -61,5 +61,5 @@ img
 .half-rule { 
     margin-left: 0;
     text-align: left;
-    width: 50%;
+    border-color: black;
  }
