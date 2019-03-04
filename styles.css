@@ -1,0 +1,59 @@
+h1
+{
+    font-family: 'Roboto Slab';
+    font-size: 64px;
+}
+
+h2
+{
+    font-family: 'Roboto Slab';
+    font-size: 40px;
+}
+
+h3
+{
+    font-family: 'Abril Fatface';
+    font-size: 5em;
+    text-align: center;
+}
+
+.page-header 
+{ 
+    border-bottom:none;
+    padding-bottom: 64px;
+}
+
+#nav
+{
+    font-family: 'Abril Fatface';
+    font-size: 54px;
+    color: black;
+    text-align: center;
+}
+
+.row
+{
+    border: 1px solid;
+    border-radius: 25px;
+    background-color: #FFD685;
+    margin: 10px;
+}
+
+ul 
+{
+    text-align: center;
+    list-style-position: inside;
+    font-size: 2em;
+}
+
+p
+{
+    font-size: 16px;
+}
+
+img 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
