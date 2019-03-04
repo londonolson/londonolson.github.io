@@ -37,6 +37,8 @@ h3
     border-radius: 25px;
     background-color: #C9C9BD;
     margin: 10px;
+    box-shadow: 5px 10px #888888;
+    margin-bottom: 25px;
 }
 
 ul 
