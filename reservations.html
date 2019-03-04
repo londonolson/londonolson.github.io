@@ -48,7 +48,7 @@
             
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h3 style="font-size:64px;">
+                <h3 style="font-size:4em;">
                     Reservations
                 </h3>
                 <br>
@@ -96,37 +96,37 @@
                         <span class="help-block" ng-show="errorDestination">{{ errorDestination }}</span>
                     </div>
             
-                    <div id="name-group" class="form-group" ng-class="{ 'has-error' : errorName }" style="width: 400px;margin-right: auto; margin-left: auto; text-align: center; justify-content: center;">
+                    <div id="name-group" class="form-group" ng-class="{ 'has-error' : errorName }" style="width: 50%;margin-right: auto; margin-left: auto; text-align: center; justify-content: center;">
                         <label>First and Last Name</label>
                         <input type="text" name="name" class="form-control" placeholder="Guest" ng-model="formData.name" maxlength="20">
                         <span class="help-block" ng-show="errorName">{{ errorName }}</span>
                     </div>
 
-                    <div id="adults-group" class="form-group" ng-class="{ 'has-error' : errorAdults }"style="width: 400px;margin-right: auto; margin-left: auto; text-align: center; justify-content: center;">
+                    <div id="adults-group" class="form-group" ng-class="{ 'has-error' : errorAdults }"style="width: 50%;margin-right: auto; margin-left: auto; text-align: center; justify-content: center;">
                         <label>How many Adults</label>
                         <input type="number" name="adults" class="form-control" placeholder="#" ng-model="formData.adults" min="1" max="10">
                         <span class="help-block" ng-show="errorAdults">{{ errorAdults }}</span>
                     </div>
             
-                    <div id="children-group" class="form-group" ng-class="{ 'has-error' : errorChildren }"style="width: 400px;margin-right: auto; margin-left: auto; text-align: center; justify-content: center;">
+                    <div id="children-group" class="form-group" ng-class="{ 'has-error' : errorChildren }"style="width: 50%;margin-right: auto; margin-left: auto; text-align: center; justify-content: center;">
                         <label>How many Children</label>
                         <input type="number" name="children" class="form-control" placeholder="#" ng-model="formData.children" min="0" max="10">
                         <span class="help-block" ng-show="errorChildren">{{ errorChildren }}</span>
                     </div>
                     
-                    <div id="checkInDate-group" class="form-group" ng-class="{ 'has-error' : errorCheckInDate }"style="width: 400px;margin-right: auto; margin-left: auto; text-align: center; justify-content: center;">
+                    <div id="checkInDate-group" class="form-group" ng-class="{ 'has-error' : errorCheckInDate }"style="width: 50%;margin-right: auto; margin-left: auto; text-align: center; justify-content: center;">
                         <label>Pick a check (in) date for your trip</label>
                         <input type="date" name="checkInDate" class="form-control" placeholder="" ng-model="formData.checkInDate">
                         <span class="help-block" ng-show="errorCheckInDate">{{ errorCheckInDate }}</span>
                     </div>
             
-                    <div id="checkOutDate-group" class="form-group" ng-class="{ 'has-error' : errorCheckOutDate }"style="width: 400px;margin-right: auto; margin-left: auto; text-align: center; justify-content: center;">
+                    <div id="checkOutDate-group" class="form-group" ng-class="{ 'has-error' : errorCheckOutDate }"style="width: 50%;margin-right: auto; margin-left: auto; text-align: center; justify-content: center;">
                         <label>Pick a check (out) date for your trip</label>
                         <input type="date" name="checkOutDate" class="form-control" placeholder="" ng-model="formData.checkOutDate">
                         <span class="help-block" ng-show="errorCheckOutDate">{{ errorCheckOutDate }}</span>
                     </div>
             
-                    <div id="phone-group" class="form-group" ng-class="{ 'has-error' : errorPhone }"style="width: 400px;margin-right: auto; margin-left: auto; text-align: center; justify-content: center;">
+                    <div id="phone-group" class="form-group" ng-class="{ 'has-error' : errorPhone }"style="width: 50%;margin-right: auto; margin-left: auto; text-align: center; justify-content: center;">
                         <label>Phone Number (format: x-xxx-xxx-xxxx)</label>
                         <input type="tel" name="phone" class="form-control bfh-phone"  placeholder="1-234-567-8910" ng-model="formData.phone" maxlength="20" >
                         <span class="help-block" ng-show="errorPhone">{{ errorPhone }}</span>
@@ -142,7 +142,7 @@
 
                     <br>
 
-                    <div style="width: 400px; margin-right: auto; margin-left: auto; text-align: center; justify-content: center; ">
+                    <div style="width: 50%; margin-right: auto; margin-left: auto; text-align: center; justify-content: center; ">
                         <p style="background-color: #37AFA9; border-radius: 5px;font-size: 30px; "><strong>Destination Activities:</strong> {{ formData.destination }} </p> 
                         <p style="background-color: #37AFA9; border-radius: 5px;font-size: 30px;"><strong>First and Last Name:</strong> {{ formData.name }}</p>
                         <p style="background-color: #37AFA9; border-radius: 5px;font-size: 30px;"><strong>Number of Adults:</strong> {{ formData.adults }}</p>
