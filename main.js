@@ -12,22 +12,18 @@ function formController($scope, $http) {
             .success(function(data) {
                 console.log(data);
                 if (!data.success) {
-                    $scope.errorName = data.errors.name;
                     $scope.errorAdults = data.errors.adults;
                     $scope.errorChildren = data.errors.children;
                     $scope.errorCheckInDate = data.errors.checkInDate;
                     $scope.errorCheckOutDate = data.errors.checkOutDate;
-                    $scope.errorPhone = data.errors.phone;
                     $scope.errorDestination = data.errors.destination;
 
                 } else {
                     $scope.message = data.message;
-                    $scope.errorName = '';
                     $scope.errorAdults = '';
                     $scope.errorChildren = '';
                     $scope.errorCheckInDate = '';
                     $scope.errorCheckOutDate = '';
-                    $scope.errorPhone = '';
                     $scope.errorDestination = '';
                 }
             });
