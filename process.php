@@ -22,4 +22,23 @@ if ( ! empty($errors)) {
 // return all our data to an AJAX call
 echo json_encode($data);
 
+//Send data to a MySQL table
+$link = mysqli_connect("localhost", "root", "", "demo");
+
+if($link === false){
+  die("ERROR: Could not connect. " .
+mysqli_connect_error());
+}
+
+$sql = "INSERT INTO customers (name, adults, children, checkInDate, checkOutDate, phone, destination)
+VALUES ($name, $adults, $children, $checkInDate, $checkOutDate, $phone, $destination)";
+if(mysqli_query($link, $sql)){
+  echo "Records inserted successfully.";
+} else{
+  echo "ERROR: Was not able to execute $sql. " .
+mysqli_error($link);
+}
+
+mysqli_close($link);
+
 ?>
